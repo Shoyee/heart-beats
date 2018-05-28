@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>心跳动画</title>
+		<style>
+			body{
+				background-color: black;
+			}
+			div{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background-color: white;
+				position: absolute;
+				top: 200px;
+				left: 450px;
+			}
+			#down{
+				background-color: lightseagreen;
+				animation: animate1 1s linear infinite;
+			}
+			#mid{
+				background-color: greenyellow;
+				animation: animate2 1s linear infinite;
+			}
+			@keyframes animate1{
+				from{transform: scale(1);}
+				to{transform: scale(3);
+				opacity: 0;}
+			}
+			@keyframes animate2{
+				from{transform: scale(1);}
+				to{transform: scale(2);
+				opacity: 0;}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="down"></div>
+		<div id="mid"></div>
+		<div id="up"></div>
+	</body>
+</html>
