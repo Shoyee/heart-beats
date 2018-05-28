@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>心跳动画</title>
+		<style>
+			body{
+				background-color: black;
+			}
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: white;
+				border-radius: 50%;
+				position: absolute;
+				top: 200px;
+				left: 450px;
+			}
+			#down{
+				background-color: mediumpurple;
+				animation: animate1 1s linear infinite;
+			}
+			#mid-down{
+				background-color: greenyellow;
+				animation: animate2 1s linear infinite;
+			}
+			#mid-up{
+				background-color: lightskyblue;
+				animation: animate3 1s linear infinite;
+			}
+			#up{
+				background-color: darkred;
+				animation: animate4 1s linear infinite;
+			}
+			@keyframes animate1{
+				from{transform: scale(1);}
+				to{transform: scale(4);
+				opacity: 0;}
+			}
+			@keyframes animate2{
+				from{transform: scale(1);}
+				to{transform: scale(3);
+				opacity: 0;}
+			}
+			@keyframes animate3{
+				from{transform: scale(1);}
+				to{transform: scale(2);
+				opacity: 0;}
+			}
+			@keyframes animate4{
+				from{transform: scale(0.5);}
+				to{transform: scale(1);
+				opacity: 0;}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="down"></div>
+		<div id="mid-down"></div>
+		<div id="mid-up"></div>
+		<div id="up"></div>
+	</body>
+</html>
